@@ -1,11 +1,14 @@
 .container {
   width: 700px;
+  height: 2000px;
   margin: 50px auto;
   text-align: center;
 }
+h2 {
+  margin-bottom: 30px;
+}
 /* First Exercise */
-button {
-  display: block;
+.button {
   width: 250px;
   margin: 10px auto 80px;
   background-color: white;
@@ -18,7 +21,7 @@ button {
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
-button:hover {
+.button:hover {
   background-color: #4682b4;
   color: white;
   width: 300px;
@@ -42,4 +45,37 @@ button:hover {
   transform: scale(1.2) rotate(30deg) translateY(50px);
   border-radius: 0;
   font-size: 30px;
+}
+
+/* Third Exercise */
+img {
+  width: 350px;
+  animation: anime 5s ease-in forwards infinite;
+}
+@keyframes anime {
+  0% {
+    transform: translate(100%, 150px);
+    opacity: 0;
+    border-radius: 0;
+  }
+  40% {
+    opacity: 1;
+    transform: translateX(-200px);
+    border-radius: 0;
+  }
+  60% {
+    transform: scale(0.5);
+    border-radius: 0;
+  }
+  90%,
+  100% {
+    width: 400px;
+    height: 400px;
+    transform: translate(0, 0);
+    border-radius: 50%;
+  }
+}
+
+.btns {
+  margin-top: 150px;
 }
